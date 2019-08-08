@@ -16,7 +16,7 @@ const styles = {
   },
 
   viewStyle: {
-    backgroundColor: "pink",
+    backgroundColor: "#039BE5",
     height: 80,
     display: "flex",
     justifyContent: "center",
