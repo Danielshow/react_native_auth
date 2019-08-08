@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, TextInput } from "react-native";
-import { Card, CardSection, Button } from "./common";;
+import { Card, CardSection, Button, Input } from "./common";;
 
 export default class LoginForm extends Component {
   state = { email: "" };
@@ -8,20 +8,19 @@ export default class LoginForm extends Component {
     return (
       <Card>
         <CardSection>
-          <TextInput
-            style={styles.inputStyle}
+          <Input
+            label= 'Email'
             placeholder={"Enter your email address"}
-            textContentType="emailAddress"
+            contentType="emailAddress"
             value={this.state.text}
             onChangeText={text => this.setState({ email: text })}
           />
         </CardSection>
         <CardSection>
-          <TextInput
-            style={styles.inputStyle}
+          <Input
+            label= 'Password'
             placeholder={"Enter your password"}
-            textContentType="password"
-            inp
+            contentType="password"
           />
         </CardSection>
         <CardSection>
@@ -32,9 +31,3 @@ export default class LoginForm extends Component {
   }
 }
 
-const styles = {
-  inputStyle: {
-    width: "100%",
-    height: 30,
-  },
-};;
