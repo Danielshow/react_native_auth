@@ -13,6 +13,7 @@ const Header = ({ headerText }) => {
 const styles = {
   textStyle: {
     fontSize: 25,
+    color: '#fff'
   },
 
   viewStyle: {
